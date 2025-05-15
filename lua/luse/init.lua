@@ -30,12 +30,4 @@ function m.generateFile(packages)
 	return data
 end
 
-function m.saveFile(contents, filePath)
-	local file = io.open(vim.fs.normalize(filePath), "w")
-	if file ~= nil then
-		file:write(contents)
-		file:close()
-	end
-end
-
 return m
