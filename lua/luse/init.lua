@@ -1,4 +1,4 @@
-local m
+local m = {}
 
 function m.packageNameToUseFlags(package)
 	local commands = {
